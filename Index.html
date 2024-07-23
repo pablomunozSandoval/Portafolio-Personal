@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <header>
@@ -24,16 +25,22 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item contact">
+                            <a class="nav-link scroll" href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#skills"><i class="fas fa-lightbulb"></i> Habilidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#projects"><i class="fas fa-archive"></i> Proyectos</a>
                         </li>
+
+                        
+
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
+                            <button id="toggleDarkMode" class="btn"><i class="fas fa-moon"></i> Modo Oscuro</button>
                         </li>
                     </ul>
                 </div>
@@ -42,48 +49,39 @@
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="home-section text-center text-light d-flex align-items-center justify-content-center">
+    <section id="home" class="home-section section text-center text-light d-flex align-items-center justify-content-center">
         <div class="container">
-            <h1>Bienvenido a Mi Portafolio</h1>
-            <p>Soy Pablo Muñoz, Técnico Analista Desarrollador FULLSTACK .NET y Angular</p>
+            <h1>TECNICO ANALISTA DESARROLLADOR</h1>
+            <h3>DESARROLLADOR FULL STACK</h3>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section bg-light py-5">
-        <div class="container">
+    <section id="about" class="about-section section ">
+        <div class="container ">
             <h2 class="text-center">Sobre Mí</h2>
-            <p class="text-center">Soy un técnico analista desarrollador con experiencia en .NET C#, ASP.NET, ASP.NET MVC, y arquitectura en Oracle. También tengo certificación en AWS.</p>
+            <p class="text-justify col-md-10 mx-auto">A lo largo de mi carrera, he trabajado en empresas de 
+                diversos sectores, destacando en roles que combinan la atención técnica y el 
+                servicio al cliente, tanto de manera presencial como telefónica. Mi experiencia 
+                incluye el desarrollo de soluciones front-end y back-end, así como la integración 
+                de tecnologías emergentes para optimizar la experiencia del usuario.</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section text-light py-5">
-        <div class="container">
+    <section id="projects" class="projects-section section">
+        <div class="container col-md-12 cols-sm-2">
+            <br>
             <h2 class="text-center">Proyectos</h2>
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- Ejemplo de proyecto -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-12">
                     <div class="card border-primary">
-                        <div class="card-body bg-secondary">
-                            <h4 class="card-title">Proyecto 1</h4>
-                            <p class="card-text">Descripción del proyecto 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-primary">
-                        <div class="card-body bg-secondary">
-                            <h4 class="card-title">Proyecto 2</h4>
-                            <p class="card-text">Descripción del proyecto 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-primary">
-                        <div class="card-body bg-secondary">
-                            <h4 class="card-title">Proyecto 3</h4>
-                            <p class="card-text">Descripción del proyecto 3.</p>
+                        <div class="card-body">
+                            <h4 class="card-title">Mantenedor Horarios</h4>
+                            <img src="assets/img/Proyecto1.png" alt="Logo" class="img-fluid">
+                            <p class="card-text mt-3">Proyecto desarrollado en Angular en base a ApiRest para mantencion de horarios institucionales.</p>
+                            <a href="#" class="hover-link">Visita el sitio web</a>
                         </div>
                     </div>
                 </div>
@@ -93,9 +91,9 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Habilidades</h2>
+    <section id="skills" class="skills-section section  py-5">
+        <div class="container mb-5 py-3">
+            <h2 class="text-center py-2">Habilidades</h2>
             <ul class="list-unstyled text-center">
                 <li>.NET C#</li>
                 <li>ASP.NET MVC</li>
@@ -108,10 +106,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section text-light py-5">
-        <div class="container">
+    <section id="contact" class="contact-section section  py-5">
+        <div class="container py-4">
             <h2 class="text-center">Contacto</h2>
-            <form id="contactForm" class="text-light">
+            <form id="contactForm" class="text-light py-4">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" class="form-control" id="name" placeholder="Tu Nombre" required>
@@ -136,10 +134,9 @@
         </div>
     </footer>
 
-  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
