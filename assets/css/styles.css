@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    background-color: #9de3f08e;
+    color: #333333; /* Texto oscuro por defecto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Negrita para encabezados */
+    color: #333333; /* Texto oscuro para encabezados */
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff; /* Borde blanco */
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular para textos */
+    color: #333333; /* Texto oscuro para elementos de texto */
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff; /* Borde blanco */
+}
+p, li, a, span, div {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular para textos */
+    color: #333333; /* Texto oscuro para elementos de texto */
+    }
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/f8e15e935890.png') no-repeat center center/cover;
+    background-color: #e9eae4;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Texto claro para la sección home */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(132, 255, 224, 0.358); /* Color negro con opacidad para reducir la intensidad de la imagen de fondo */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+    border-radius: 20px; /* Mantener el borde redondeado */
+}
+
+.about-section, .skills-section {
+    padding: 60px 0;
+    background-color: #e2fee2;
+    color: #333333; /* Texto oscuro para secciones con fondo claro */
+}
+
+.projects-section {
+    padding: 60px 0;
+    background-color: #59bccc;
+    color: #ffffff; /* Texto claro para secciones con fondo oscuro */
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #59bccc;
+    color: #ffffff; /* Texto claro para secciones con fondo oscuro */
+}
+
+.navbar {
+    flex-wrap: nowrap;
+    background-color: #59bccc;
+    border-bottom: #fae600fb 2px solid;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #e2fee2 !important; /* Texto claro para los enlaces de navegación */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #e2fee277;
+    border-radius: 20px;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+.card.border-primary {
+    border-color: #e2fee2 !important;
+}
+
+.card-body.bg-secondary {
+    background-color: #59bccc;
+    color: #ffffff; /* Texto claro para el cuerpo de la tarjeta */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.form-control {
+    border-color: #59bccc;
+}
+
+.form-control:focus {
+    border-color: #e2fee2;
+    box-shadow: 0 0 5px rgba(226, 254, 226, 0.5);
+}
+
+.btn-primary {
+    background-color: #59bccc;
+    border-color: #59bccc;
+}
+
+.btn-primary:hover {
+    background-color: #e2fee2;
+    border-color: #e2fee2;
+    color: #59bccc;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+}
